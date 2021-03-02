@@ -338,7 +338,7 @@ table{
 
 ```
 ## work experience
-in the future)
+in the future
 ## Education
 3nd course of BSUIR on the specialty Information systems and technologies. Glo Academy intensive courses.
 ## English
