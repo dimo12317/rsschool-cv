@@ -8,7 +8,7 @@
 
 MTC +375292162852
 ## Information about me:
-I am a student of the 3 year of BSUIR, I've eaned money on programming by making laboratory works to other students. I studied js from online books learn.javascript.ru, attended many GIO ACADEMY broadcasts. I want to finish this course and start implementing my knowledge at work
+I am a student of the 3 year of BSUIR, I've eaned money on programming by making laboratory works to other students. I studied js from online books learn.javascript.ru, attended many GIO ACADEMY broadcasts. I want to finish this course and start implementing my knowledge at work. 
 ## Skils
 HTML, CSS, JS, C++
 ## Code examples
@@ -336,6 +336,170 @@ table{
     width: 60px;
 }
 
+```
+C++
+``` C++
+#include "pch.h"
+#include <iostream>
+using namespace std;
+
+struct Spis2
+{
+int info;
+int key;
+Spis2 *rig;
+Spis2 *lef;
+};
+void CreateSpis2(Spis2 **a)
+{
+*a = new Spis2;
+(*a)->lef = 0;
+(*a)->rig = 0;
+(*a)->info = NULL;
+(*a)->key = NULL;
+}
+void PushrigSpis2(Spis2 **a, int inf,int key)
+{
+if ((*a)->lef == 0 && (*a)->rig == 0 && (*a)->info == NULL)
+{
+(*a)->info = inf;
+(*a)->key = key;
+}
+else
+{
+Spis2 *b;
+b = new Spis2;
+b->info = inf;
+b->key = key;
+b->rig = (*a)->rig;
+(*a)->rig = b;
+b->lef = *a;
+*a = b;
+}
+}
+void PushlefSpis2(Spis2 **a, int inf,int key)
+{
+if ((*a)->lef == 0 && (*a)->rig == 0 && (*a)->info == NULL)
+{
+(*a)->info = inf;
+(*a)->key = key;
+}
+else
+{
+Spis2 *b;
+b = new Spis2;
+b->info = inf;
+b->key = key;
+b->lef = (*a)->lef;
+(*a)->lef = b;
+b->rig = *a;
+*a = b;
+}
+}
+int PrintSpis2(Spis2 **a)
+{
+return (*a)->info;
+}
+void GorigSpis2(Spis2 **a)
+{
+if ((*a)->rig == 0)
+{
+cout « "elemet is empty ";
+}
+else
+{
+*a = (*a)->rig;
+}
+}
+void GolefSpis2(Spis2 **a)
+{
+if ((*a)->lef == 0)
+{
+cout « "element is empty ";
+}
+else
+{
+*a = (*a)->lef;
+}
+}
+void deleteSpis2(Spis2 **a)
+{
+if ((*a)->rig == 0 && (*a)->lef == 0)
+{
+cout « "Spis2 is empty ";
+}
+else
+if ((*a)->lef == 0)
+{
+(*a)->rig->lef = (*a)->lef;
+(*a)->info = 0;
+*a = (*a)->rig;
+}
+else if ((*a)->rig == 0)
+{
+(*a)->lef->rig = (*a)->rig;
+(*a)->info = 0;
+*a = (*a)->lef;
+}
+else
+{
+(*a)->lef->rig = (*a)->rig;
+(*a)->rig->lef = (*a)->lef;
+(*a)->info = 0;
+*a = (*a)->rig;
+}
+}
+int main()
+{
+setlocale(LC_ALL, "ru");
+Spis2 *ar[9];
+int min;
+for (int i = 0;i < 10;i++)
+{
+CreateSpis2(&ar[i]);
+}
+int a,inf,key,l;
+cout « "Сколько элементов вы хотите ввести хеш таблицу: ";
+cin » a;
+cout « endl;
+for (int i = 0;i < a;i++)
+{
+cout « "Введите инфармацию об элементе: ";
+cin » inf;
+cout « "Введите ключ элемента(двухзначное число): ";
+cin » key;
+l = key % 10;
+PushrigSpis2(&ar[l],inf,key);
+}
+min = key;
+for (int i = 0;i < 10;i++)
+{
+while (ar[i]->lef != NULL)
+GolefSpis2(&ar[i]);
+}
+for (int i = 0;i < 10;i++)
+{
+while (i < 9 && ar[i]->key == NULL)
+{
+if (i < 9)
+i++;
+}
+while (ar[i]->rig != NULL)
+{
+if (min > ar[i]->key)
+min = ar[i]->key;
+GorigSpis2(&ar[i]);
+}
+if(min > ar[i]->key && ar[i]->key != NULL)
+min = ar[i]->key;
+}
+cout « "Номер стека с минисальным значением ключа: " « min % 10;
+for (int i = 0;i < 10;i++)
+{
+while (ar[i]->lef != NULL)
+GolefSpis2(&ar[i]);
+}
+}
 ```
 ## work experience
 in the future
