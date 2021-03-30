@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: cornsilk;
+}
+
+header{
+    margin: 1%;
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    height: 150px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+header .CV{
+    margin-left: 25px;
+    margin-top: 25px;;
+    width: 50px;
+    height: 50px;
+    font-size: 100px;
+    text-align: center;
+    color: black;
+}
+
+header .referens{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    width: 40%;
+    margin-top: 110px;
+    margin-left: 50%;
+
+}
+
+header .referens a:hover{
+    text-decoration: underline;
+}
+
+header .referens a{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+main .Foto{
+    width: 100%;
+    text-align: center;
+    margin: 1%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+main .Foto img{
+    height: 400px;
+    width: 350px;
+}
+
+main .AboutMe{
+    display: flex;
+    width: 98%;
+    margin: 1%;
+    border-radius: 20px;
+    flex-direction: row;
+    align-items: center;
+    height: 300px;
+    background-color: white;
+}
+
+main .AboutMe .Hello{
+    font-size: 50px;
+    margin-left: 30px;
+}
+main .AboutMe .info{
+    font-size: 40px;
+    margin-left: 100px;
+    text-align: center;
+}
+main .Skils{
+    margin: 1%;
+    width: 98%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .Skils h3{
+    font-size: 50px;
+}
+main .Skils div{
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    text-align: center;
+}
+main .Skils ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    width: 98%;
+    font-size: 30px;
+    justify-content: space-around;
+    text-align: center;
+}
+main .Education{
+    margin: 1%;
+    width: 98%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+main .Education .d1{
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 50px;
+}
+main .Education .d2{
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+main .English{
+    margin: 1%;
+    width: 98%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+main .English .d1{
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 50px;
+}
+main .English .d2{
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+main .MyCode{
+    margin: 1%;
+    width: 98%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+main .MyCode h3{
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 50px;
+}
+main .MyCode code{
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+footer .Contacts{
+    margin: 1%;
+    width: 98%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .Contacts .Cont{
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+footer .Contacts ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    height: 100px;
+    margin-left: 30px;
+}
+footer .Contacts ul li{
+    text-decoration: none;
+}
