@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    transition: 0.5s;
 }
 
 body{
@@ -25,6 +26,7 @@ header div{
     font-size: 18px;
     line-height: 128%;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 header .menu-close{
@@ -74,12 +76,20 @@ header  .menu-close .pick{
     justify-content: space-between;
 }
 .search-close .search-input{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
     border-bottom: #333333;
     border-bottom-style: dotted;
     margin-right: 50px;
 }
 
+.search-close .search-input:hover{
+    background-color: yellow;
+}
+
 .search-close .search-button{
+    cursor: pointer;
     border-style: solid;
     border-color: red;
     border-radius: 5px;
@@ -87,7 +97,12 @@ header  .menu-close .pick{
     padding: 5px;
 }
 
+.search-close .search-button:hover{
+    background-color: yellow;
+}
+
 .search-open{
+    cursor: pointer;
     display: none;
     margin-left: 5%;
     width: 240px;
@@ -96,9 +111,16 @@ header  .menu-close .pick{
     justify-content: space-between;
 }
 .search-open .search-input{
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
     border-bottom: #333333;
     border-bottom-style: dotted;
     margin-right: 50px;
+}
+
+.search-open .search-input:hover{
+    background-color: yellow;
 }
 
 .search-open .search-button{
@@ -107,6 +129,10 @@ header  .menu-close .pick{
     border-radius: 5px;
     border-width: 2px;
     padding: 5px;
+}
+
+.search-open .search-button:hover{
+    background-color: yellow;
 }
 
 main{
@@ -385,6 +411,7 @@ footer .map img{
 }
 
 .modal form .on{
+    cursor: pointer;
     margin-top: 10px;
     white-space: normal;
     width: 40%;
@@ -490,6 +517,11 @@ footer .map img{
         width: 90%;
     }
 }
+
+
+
+
+
 
 
 
