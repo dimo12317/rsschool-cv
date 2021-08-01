@@ -1,0 +1,1068 @@
+a{
+    text-decoration: none;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #F3F7F8;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+#contactUsModal{
+    margin-left: 0px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+    background: #2A8086;
+    box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, .5);
+}
+header .olinezLogo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 11.40625%;
+    margin-right: 1px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34.8387px;
+    line-height: 41px;
+}
+header .olinezLogo .glasses{
+    width: 71.42px;
+    height: 24.39px;
+    margin-left: 5.23px;
+}
+header .controlPanel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+header .controlPanel .about{
+    text-decoration: underline #C5E1E6;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #C5E1E6;
+}
+header .controlPanel div{
+    margin-left: 52px;
+    white-space: nowrap;
+
+}
+header .controlPanel button{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #C5E1E6;
+    white-space: nowrap;
+    border-radius: 100px;
+    border: 1px solid #2A8086;
+    transition: 0.5s;
+    padding: 0px 10px; 
+    background-color: #2A8086; 
+}
+header .controlPanel button:hover{
+    border-color: #C5E1E6;
+    transition: 0.5s;
+}
+header .controlPanel .contactUsModalContent{
+    background-color: #E5E5E5;
+    padding: 46px 60px 42px;
+    width: 29.58%;
+    margin: 7% auto;
+    display: flex;
+    flex-direction: column;
+}
+header .controlPanel .contactUsModalContent input{
+    width: 100%;
+    height: 54px;
+}
+header .controlPanel .contactUsModalContent .logo{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #0D444D;
+    margin-bottom: 26px;
+}
+header .controlPanel .contactUsModalContent div{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #0D444D;
+    margin-bottom: 8px;
+}
+header .controlPanel .contactUsModalContent input{
+    height: 54px;
+    margin-bottom: 20px;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+header .controlPanel .contactUsModalContent button{
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #C5E1E6;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+header .controlPanel .contactUsModalContent button:hover{
+    transition: 0.5s;
+    background-color: yellow;
+}
+header .controlPanel .contactUsModalContent .textL{
+    height: 264px;
+    margin-bottom: 20px;
+}
+header .controlPanel a{
+ font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #C5E1E6;
+    white-space: nowrap;
+    border-radius: 100px;
+    border: 1px solid #2A8086;
+    transition: 0.5s;
+    padding: 0px 10px;
+}
+header .controlPanel a:hover{
+    border-color: #C5E1E6;
+    transition: 0.5s;
+}
+header .onlineLogoSearch{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 4.6875%;
+}
+header .onlineLogoSearch div,button:hover{
+    cursor: pointer;
+}
+header .onlineLogoSearch button{
+    background-color: #2A8086;
+}
+header .onlineLogoSearch div,button{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #C5E1E6;
+    white-space: nowrap;
+}
+header .onlineLogoSearch .logIn{
+    margin-left: 29px;
+    padding: 15px 14px;
+    border-radius: 100px;
+    border: 1px solid #2A8086;
+    transition: 0.5s;
+}
+header .onlineLogoSearch .logIn:hover{
+    border-color: #C5E1E6;
+    transition: 0.5s;
+}
+header .onlineLogoSearch .modalHeader{
+    width: 29.58%;
+    margin:  2% auto 0px;
+    padding: 0px 60px;
+    background-color: #2A8086;
+    height: 125px;
+    text-align: center;
+}
+header .onlineLogoSearch .modalHeader img{
+    margin-top: 32px;
+}
+header .onlineLogoSearch .logInModalContent{
+    background-color: #E5E5E5;
+    padding: 46px 60px 42px;
+    width: 29.58%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+header .onlineLogoSearch .logInModalContent .chose{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+header .onlineLogoSearch .logInModalContent .chose div{
+    width: 50%;
+    height: 58px;
+    text-align: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #0D444D;
+    text-align: center;
+}
+header .onlineLogoSearch .logInModalContent .chose .a{
+    border-bottom-width: 2px; 
+    border-bottom-style: solid; 
+    border-bottom-color: #C5E1E6;
+}
+header .onlineLogoSearch .logInModalContent .chose .b{
+    border-bottom-width: 2px; 
+    border-bottom-style: solid; 
+    border-bottom-color: #2A8086;
+}
+header .onlineLogoSearch .logInModalContent .choseMessage{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+header .onlineLogoSearch .logInModalContent .choseMessage div{
+    display: flex;
+    flex-direction: row;
+    padding-left: 15.5px;
+    width: 48%;
+    height: 54px;
+    background-color: white;
+    align-items: center;
+}
+header .onlineLogoSearch .logInModalContent .choseMessage .a{
+    margin-right: 16px;
+    border-radius: 5px;
+    border-style: hidden;
+    border-color: #2A8086;
+}
+header .onlineLogoSearch .logInModalContent .choseMessage .b{
+    border-radius: 5px;
+    border-style: hidden;
+    border-color: #2A8086;
+}
+header .onlineLogoSearch .logInModalContent .choseMessage div img{
+    margin-right: 15.5px;
+}
+header .onlineLogoSearch .logInModalContent input{
+    width: 100%;
+    height: 54px;
+}
+header .onlineLogoSearch .logInModalContent .logo{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #0D444D;
+    margin-bottom: 26px;
+}
+header .onlineLogoSearch .logInModalContent div{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #0D444D;
+    margin-bottom: 8px;
+}
+header .onlineLogoSearch .logInModalContent .createAc{
+    display: none;
+}
+header .onlineLogoSearch .logInModalContent .useAg{
+    align-items: center;
+    margin-bottom: 32px;
+}
+header .onlineLogoSearch .logInModalContent img{
+    margin-right: 22px;
+}
+header .onlineLogoSearch .logInModalContent input{
+    height: 54px;
+    margin-bottom: 20px;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+header .onlineLogoSearch .logInModalContent button{
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #C5E1E6;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+header .onlineLogoSearch .logInModalContent button:hover{
+    transition: 0.5s;
+}
+header .onlineLogoSearch .logInModalContent .textL{
+    height: 264px;
+    margin-bottom: 20px;
+}
+header .onlineLogoSearch .signUp{
+    margin-left: 3px;
+    padding: 15px 14px;
+    border: 1px solid #C5E1E6;
+    box-sizing: border-box;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+header .onlineLogoSearch .regAc{
+    display: none;
+    margin-left: 3px;
+    padding: 15px 14px;
+    border: 1px solid #C5E1E6;
+    box-sizing: border-box;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+header .onlineLogoSearch .logOut{
+    background-color: #2A8086;
+    display: none;
+    position: relative;
+    top: 60px;
+    left: 122px;
+    margin-left: 3px;
+    padding: 15px 14px;
+    border: 1px solid #C5E1E6;
+    box-sizing: border-box;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+header .onlineLogoSearch .signUp:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+header .onlineLogoSearch .personMenu{
+    display: none;
+}
+header .onlineLogoSearch .personImg{
+    display: none;
+}
+main{
+    width: 100%;
+    height: 2149.7px;
+    display: flex;
+    flex-direction: row;
+}
+main .no1{
+    display: none;
+}
+main .stickImg{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 40px;
+    margin-left: 11.4583333%;
+    margin-top: 36px;
+    width: 105px;
+    height: 600px;
+    align-items: center;
+    z-index: 1;
+}
+main .stickImg #pand{
+    margin-top: 17px;
+}
+main .stickImg a{
+    margin-bottom: 8.63px;
+    width: 76px;
+    height: 73.37px;
+    z-index: 3;
+}
+main .stickImg .rc:hover ~ .greenCerkl{
+    transition: 0.5s;
+    transform: rotate(360deg);
+}
+main .stickImg .rc ~ .greenCerkl{
+    transition: 0.5s;
+    transform: rotate(-360deg);
+}
+main .stickImg div{
+    margin-bottom: 61px;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    z-index: 3;
+}
+main .stickImg .greenCerkl{
+    display: flex;
+    position: relative;
+    bottom: 183.21px;
+    z-index: 2;
+}
+main .infoPage{
+    width: 69%;
+    margin-left: 64px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+main .infoPage .infoPageLogo{
+    display: flex;
+    flex-direction: row;
+    Justify-content: space-between;
+    width: 100%;
+    height: 120px;
+}
+main .infoPage .infoPageLogo img:hover{
+    cursor: pointer;
+}
+main .infoPage .infoPageLogo div{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #0D444D;
+    width: 300px;
+}
+main .infoPage .infoPageLogo .LogoI{
+    justify-content: flex-end;
+    width: 42px;
+    height: 42px;
+    margin-top: 4px;
+    margin-left: 150px;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+main .infoPage .infoPageLogo .LogoI:hover{
+    background-color: yellow;
+    transition: 0.5s;
+}
+main .infoPage .infoPageLogo .LogoLike{
+    width: 42px;
+    height: 42px;
+    margin-top: 4px;
+    margin-left: 43px;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+main .infoPage .infoPageLogo .LogoLike:hover{
+    background-color: yellow;
+    transition: 0.5s;
+}
+main .infoPage .infoMC{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 8px;
+}
+main .infoPage .mainScreen{
+    width: 100%;
+    height: 604px;
+}
+main .infoPage .infoSC{
+    margin-top: 56px;
+    margin-bottom: 8px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #0D444D;
+}
+main .infoPage .threeFoto{
+    display: flex;
+    flex-direction: row;
+}
+main .infoPage .threeFoto img{
+    width: 28%;
+    height: 240px;
+    margin-right: 32px;
+}
+main .infoPage .threeFoto .threeFotoArrows{
+    display: flex;
+    flex-direction: column;
+}
+main .infoPage .threeFoto .threeFotoArrows img{
+    width: 15px;
+    height: 21px;
+}
+main .infoPage .threeFoto .threeFotoArrows img:hover{
+   cursor: pointer;
+}
+main .infoPage .threeFoto .threeFotoArrows .Up{
+    margin-top: 83.5px;
+    margin-left: 19.5px;
+}
+main .infoPage .threeFoto .threeFotoArrows .Down{
+    margin-top: 31px;
+    margin-left: 19.5px;
+}
+main .InfoInterstingFacts{
+    margin-top: 98px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+main .InfoInterstingFacts .Information{
+    width: 528px;
+}
+main .InfoInterstingFacts .Information .InformationLogo{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 24px;
+    color: #0D444D;
+}
+main .InfoInterstingFacts .Information .InformationName{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0D444D;
+    margin-bottom: 8px;
+}
+main .InfoInterstingFacts .Information .InformationInf{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0D444D;
+    margin-bottom: 36px;
+}
+main .InfoInterstingFacts .InterstingFacts{
+    display: flex;
+    flex-direction: column;
+    margin-left: 145px;
+    width: 596.66px;
+}
+main .InfoInterstingFacts .InterstingFacts .InterstingFactsLogo{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    width: 28px;
+    margin-bottom: 23px;
+    white-space: nowrap;
+    color: #0D444D;
+}
+main .InfoInterstingFacts .InterstingFacts ul{
+    list-style: url(OnlineZ.image/Vector26.png);
+    padding-left: 22.66px;
+}
+main .InfoInterstingFacts .InterstingFacts li{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0D444D;
+    margin-bottom: 20px;
+}
+main .donateToV{
+    width: 1920px;
+    height: 402.7px;
+    background-image: url(OnlineZ.image/Frame343.png);
+    position: relative;
+    right: 389px;
+    display: flex;
+    flex-direction: row;
+}
+main .donateToV .tree1{
+    width: 130.13px;
+    height: 230px;
+    margin-left: 20.3%;
+    margin-top: 18px;
+}
+main .donateToV .PandDonate{
+    display: flex;
+    flex-direction: column;
+    margin-left: 13.9%;
+}
+main .donateToV .PandDonate .pand{
+    width: 163px;
+    height: 155px;
+    z-index: 3;
+    margin-top: 91px;
+    margin-left: 163px;
+    padding: 0px;
+}
+main .donateToV .PandDonate .bamboo{
+    position: relative;
+    bottom: 267.5px;
+    left: 249px;
+    width: 147.18px;
+    height: 280px;
+    z-index: 4;
+}
+main .donateToV .PandDonate .donat{
+    position: relative;
+    bottom: 223px;
+    padding: 14px 58px;
+    background-color: #C5E1E6;
+    border-radius: 100px;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.05em;
+    transition: 0.5s;
+}
+main .contactUsModalContent{
+    background-color: #E5E5E5;
+    padding: 46px 60px 42px;
+    width: 29.58%;
+    margin: 7% auto;
+    display: flex;
+    flex-direction: column;
+}
+main .contactUsModalContent input{
+    width: 100%;
+    height: 54px;
+}
+main .contactUsModalContent .logo{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #0D444D;
+    margin-bottom: 26px;
+}
+main .contactUsModalContent div{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #0D444D;
+    margin-bottom: 8px;
+}
+main .contactUsModalContent input{
+    height: 54px;
+    margin-bottom: 20px;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+main .contactUsModalContent button{
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    background-color: #2A8088;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+main .contactUsModalContent button:hover{
+    transition: 0.5s;
+    background-color: yellow;
+}
+main .contactUsModalContent .textL{
+    margin-bottom: 20px;
+    background-image: url('OnlineZ.image/Credit Card.png');
+    background-position: 16px;
+    background-repeat: no-repeat;
+}
+main .contactUsModalContent .protect{
+    margin-top: 14px;
+}
+main .contactUsModalContent .protect img{
+    margin-right: 12px;
+}
+main .contactUsModalContent .supportLogo{
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2D2D2D;
+    margin-bottom: 32px;
+}
+main .contactUsModalContent .timeDonate button{
+    width: 50%;
+    height: 54px;
+    border-radius: 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    border: 1px solid #19707D;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+main .contactUsModalContent .timeDonate button:hover{
+    background-color: #98dddd
+}
+main .contactUsModalContent .timeDonate .b{
+    background-color: #E5E5E5;
+    border-radius: 0px 10px 10px 0px;
+    color: #19707D;
+}
+main .contactUsModalContent .timeDonate .a{
+    border-radius: 10px 0px 0px 10px;
+}
+main .contactUsModalContent .moneyDonate button{
+    width: 16.52%;
+    height: 54px;
+    border: 1px solid #19707D;
+    border-radius: 10px;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+    margin-right: 16px;
+    margin-bottom: 24px;
+    background-color: #E5E5E5;
+    color: #19707D;
+}
+main .contactUsModalContent .moneyDonate .a{
+    background-color: #19707D;
+    color: #FFFFFF;
+}
+main .contactUsModalContent .moneyDonate button:hover{
+    background-color: #98dddd
+}
+main .contactUsModalContent .divCard{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin: 0px;
+    
+}
+main .contactUsModalContent .discountCard{
+    width: 101.33px;
+    height: 16px;
+    margin-bottom: 8px;
+}
+main .donateToV .PandDonate .donat:hover{
+    background-color: yellow;
+    transition: 0.5s;
+}
+main .donateToV .tree2{
+    width: 130.13px;
+    height: 230px;
+    margin-left: 28.85%;
+    margin-top: 135px;
+}
+footer{
+    box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 200px;
+    background-color: #196469;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+}
+footer img{
+    margin-right: 25px;
+    margin-left: 11.4583333%;
+}
+footer a{
+    margin-left: 2.70833333%;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #C5E1E6;
+    border: 1px solid #196469;
+    transition: 0.5s;
+    border-radius: 100px;
+    padding: 0px 10px;
+}
+footer a:hover{
+    border-color: #C5E1E6;
+}
+footer button{
+    margin-left: 2.70833333%;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #C5E1E6;
+    border: 1px solid #196469;
+    transition: 0.5s;
+    border-radius: 100px;
+    padding: 0px 10px;
+    background-color: #196469;
+}
+footer button:hover{
+    border-color: #C5E1E6;
+}
+footer .footerContactsRow{
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    margin-right: 9.19080919%;
+}
+footer .footerContacts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #C5E1E6;
+}
+footer .footerContacts .t1{
+   padding-left: 37px;
+}
+@media screen and (max-width: 1200px){
+    header .onlineLogoSearch .personImg{
+        display: none;
+    }
+    header .olinezLogo{
+        margin-left: 30px;
+        margin-right: 11px;
+    }
+    header .controlPanel div{
+        margin-left: 10%;
+    }
+    header .onlineLogoSearch{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 30px;
+    }
+    header .onlineLogoSearch .logIn{
+        display: none;
+    }
+    header .onlineLogoSearch .signUp{
+        display: none;
+    }
+    header .onlineLogoSearch .personImg{
+        display: flex;
+        margin-left: 31px;
+    }
+    main .stickImg{
+        margin-left: 3%;
+    }
+    main .infoPage{
+        width: 80%;
+    }
+    main .infoPage .infoSC{
+        margin-top: 26px;
+    }
+    main .infoPage .threeFoto .threeFotoArrows .Up{
+        margin-left: 0px;
+        margin-top: 60px;
+    }
+    main .infoPage .threeFoto .threeFotoArrows .Down{
+        margin-left: 0px;
+    }
+    main .infoPage .threeFoto img{
+        width: 29.20%;
+        height: 193.52px;
+    }
+    main .InfoInterstingFacts .Information{
+        width: 36%;
+    }
+    main .InfoInterstingFacts .InterstingFacts{
+        width: 51%;
+    }
+    main .InfoInterstingFacts{
+        margin-top: 56.55px;
+    }
+    footer img{
+        margin-left: 32px;
+    }
+    footer .footerContactsRow{
+        margin-right: 31px;
+    }
+    main .donateToV .PandDonate{
+        margin-left: 7%;
+    }
+    main .donateToV .tree2{
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width: 950px){
+    main .threeFoto .no{
+        display: none;
+    }
+    main .infoPage .infoPageLogo .LogoI{
+        margin-left: 50px;
+    }
+    footer a{
+        display: none;
+    }
+}
+@media screen and (max-width: 800px){
+    main .donateToV .PandDonate{
+        margin-left: 0%;
+    }
+    header .controlPanel{
+        display: none;
+    }
+    header .onlineLogoSearch div img{
+        display: none;
+    }
+    header .onlineLogoSearch .personImg{
+        display: none;
+    }
+    header .onlineLogoSearch .personMenu{
+        display: flex;
+    }
+    header .olinezLogo{
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 640px){
+    main .infoPage .threeFoto img{
+        width: 35%;
+        height: 154.05px;
+        margin-right: 8.92px;
+    }
+    main .infoPage .threeFoto .threeFotoArrows .Up{
+        margin-left: 20px;
+    }
+    main .infoPage .threeFoto .threeFotoArrows .Down{
+        margin-left: 20px;
+    }
+    main .InfoInterstingFacts{
+        flex-direction: column;
+    }
+    main .InfoInterstingFacts .Information{
+        width: 400px;
+    }
+    main .InfoInterstingFacts .InterstingFacts{
+        margin-left: 0px;
+        width: 400px;
+    }
+    main .donateToV .tree1{
+        margin-left: 150px;
+    }
+    main .infoPage .infoPageLogo{
+        height: 40px;
+    }
+    main .infoPage{
+        margin-top: 20px;
+    }
+    main .infoPage .infoPageLogo .LogoI{
+        width: 34px;
+        height: 34px;
+    }
+    main .infoPage .infoPageLogo .LogoLike{
+        width: 34px;
+        height: 34px;
+    }
+    main .infoPage .mainScreen{
+        width: 85%;
+        height: 314px;
+    }
+}
+@media screen and (max-width: 600px){
+    main{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    main .stickImg{
+        display: none;
+    }
+    footer .footerContacts{
+        font-size: 10px;
+        line-height: 12px;
+    }
+    main .no1{
+        display: flex;
+        width: 100%;
+        background-color: #488D92;
+    }
+    main .no1 img{
+        margin-top: 10.45px;
+        margin-bottom: 10.45px;
+        margin-left: 19px;
+        margin-right: 19.64px;
+    }
+    main .no1 .P1{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #F3F7F8;
+        margin-top: 23px;
+    }
+    main .no1 .im21{
+        width: 11px;
+        height: 5.5px;
+        margin-left: 47.5%;
+        margin-top: 16px;
+    }
+    main .no1 .im1{
+        width: 41.36px;
+        height: 40.09px;
+    }
+    main .infoPage{
+        width: 110%;
+        margin-left: 10px;
+        height: auto;
+    }
+    main .infoPage .infoPageLogo .LogoI{
+        width: 24.41px;
+        height: 24.41px;
+        margin-right: 7.18px;
+        margin-left: 25%;
+    }
+    main .infoPage .infoPageLogo .LogoLike{
+        width: 24.41px;
+        height: 24.41px;
+        margin-left: 0px;
+    }
+    main .InfoInterstingFacts .InterstingFacts{
+        width: 60%;
+    }
+}

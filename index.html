@@ -4,273 +4,372 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My CV</title>
-    <link rel = "stylesheet" href = "style.css">
+    <title>online zoo</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1 class = "CV">CV</h1>
-        <div class = "referens"><a>Contacts</a><a>Information about me</a><a>Skils</a><a>Education</a><a>English</a></div>
+        <div class="olinezLogo">
+            <div>online</div>
+            <div>Z<img src="OnlineZ.image/glassec.png" class="glasses"></div>
+        </div>
+        <div class="controlPanel">
+            <div class="about">ABOUT</div>
+            <div><a href="indexMap.html">MAP</a></div>
+            <div><a href="indexZoosPage.html">ZOOS</a></div>
+            <div><button class="contactUs">CONTACT US</button></div>
+            <div id="contactUsModal" class="modal">
+                <div class="contactUsModalContent">
+                    <div class="logo">CONTACT US</div>
+                    <div class="info">NAME</div>
+                    <input type="text">
+                    <div class="info">EMAIL</div>
+                    <input type="text">
+                    <div class="info">YOUR MESSAGE</div>
+                    <input type="text" class="textL">
+                    <button>SEND</button>
+                </div>
+            </div>
+            <div><a href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo?node-id=2%3A1">DESIGN</a></div>
+        </div>
+        <div class="onlineLogoSearch">
+            <div class="logOut">log out</div>
+            <div><img src="OnlineZ.image/Frame.png"></div>
+            <button class="logIn">LOG IN</button>
+            <div id="logInModal" class="modal">
+                <div class="modalHeader"><img src="OnlineZ.image/Frame 1364.png"></div>
+                <div class="logInModalContent">
+                    <div class="chose">
+                        <div class="a">CREATE ACCOUNT</div>
+                        <div class="b">LOG IN</div>
+                    </div>
+                    <div class="choseMessage">
+                        <div class="a"><img src="OnlineZ.image/logo googleg 48dp.png">Google Login</div>
+                        <div class="b"><img src="OnlineZ.image/path14.png">Facebook Login</div>
+                    </div>
+                    <div class="info createAc">NAME</div>
+                    <input type="text" class="createAc">
+                    <div class="info">EMAIL</div>
+                    <input type="text">
+                    <div class="info">PASSWORD</div>
+                    <input type="text">
+                    <div class="createAc useAg"><img src="OnlineZ.image/Rectangle 15.png">Agree with the User Agreement and Privacy Policy </div>
+                    <button>SEND</button>
+                </div>
+            </div>
+            <button class="signUp">SIGN UP</button>
+            <div class="regAc"></div>
+            <img src="OnlineZ.image/Frame 1350.png" class="personImg">
+            <img src="OnlineZ.image/Burger-menu.png" class="personMenu">
+        </div>
     </header>
     <main>
-        <div class = "Foto"><img src = "uJOmYN3DsAM.jpg" alt = "It's me"></div>
-        <div class = "AboutMe">
-            <article>
-            <h5 class = "Hello">Hello:</h5>
-            <div class = "info">I am a student of the 3 year of BSUIR, I’ve eaned money on programming, by making laboratory works to other students. I studied js from online books learn.javascript.ru, attended many GIO ACADEMY broadcasts. I want to finish this course and start implementing my knowledge at work.</div>
-            </article>
+        <div class="WatchFavoriteAnimal">
+                <div class="textFavoriteAnimal">
+                    <div class="tFA1">Watch your favorite <br><br class="br1"> animals online </div>
+                    <div class="tFA2">Observe different from around the <br class="br1"> world online in live time.<br>Help vulunteers to <br class="br1"> take a good care of animals, donate to your <br class="br1"><br> favorite ones.</div>
+                    <div class="textFavoriteAnimalRow">
+                        <a href="indexZoosPage.html"><div class="tFA3">Watch Now</div></a>
+                        <a href=""><div class="tFA31">DONATE</div></a>
+                    </div>
+                    <div class="tFA4">HOW IT WORKS</div>
+                </div>
+                <div class="videoFavoriteAnimal">
+                    <a href="indexZoosPage.html"><img src="OnlineZ.image/Click.png" class="pandaimg"></a>
+                </div>
         </div>
-        <div class = "Skils">
-            <h3>Skils:</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JS</li>
-            </ul>
+        <div class="threeImage">
+            <div class="colownImg">
+                <div><img src="OnlineZ.image/icons8-binoculars (1).png" class="threeImage1"></div>
+                <div>Keep an eye on your favourite animals online</div>
+            </div>
+            <div class="colownImg">
+                <div><img src="OnlineZ.image/icons8-dog-paw-print 1.png" class="threeImage2"></div>
+                <div>Become a part of the community</div>
+            </div>
+            <div class="colownImg">
+                <div><img src="OnlineZ.image/icons8-trust 1.png" class="threeImage3"></div>
+                <div>Support animals width the donating</div>
+            </div>
         </div>
-        <section class = "Education">
-                <h3 class = "d1">Education:</h3>
-                <div class = "d2">3nd course of BSUIR on the specialty Information systems and technologies. Glo Academy intensive courses.</div>  
-        </section>
-        <section class = "English">
-            <h3 class = "d1">English:</h3>
-            <div class = "d2">My level of English is enough to watch TV shows and films in the original, I can also speak English on general topic.</div>
-        </section>
-        <section class="MyCode">
-            <h3>My code:</h3>
-            <code>
-                var Index;<br>
-                var Answer = document.getElementById("conclusion")<br>
-                var Start = true;<br>
-                seven.onclick = function(){<br>
-                    if(Start === true){<br>
-                        Start = false;<br>
-                        Answer.innerHTML = "7"<br>
-                    }<br>
-                    else{<br>
-                        Answer.innerHTML += "7";<br>
-                    }<br>
-                }<br>
-                eight.onclick = function(){<br>
-                    if(Start === true){<br>
-                        Start = false;<br>
-                        Answer.innerHTML = "8"<br>
-                    }<br>
-                    else{<br>
-                        Answer.innerHTML += "8";<br>
-                    }<br>
-                }<br>
-                nine.onclick = function(){<br>
-                    if(Start === true){<br>
-                        Start = false;<br>
-                        Answer.innerHTML = "9"<br>
-                    }<br>
-                    else{<br>
-                        Answer.innerHTML += "9";<br>
-                    }<br>
-                }<br>
-                one.onclick = function(){<br>
-                    if(Start === true){<br>
-                        Start = false;<br>
-                        Answer.innerHTML = "1"<br>
-                    }<br>
-                    else{<br>
-                        Answer.innerHTML += "1";<br>
-                    }<br>
-                }<br>
-                two.onclick = function(){<br>
-                    if(Start === true){<br>
-                        Start = false;<br>
-                        Answer.innerHTML = "2"<br>
-                    }<br>
-                    else{<br>
-                        Answer.innerHTML += "2";<br>
-                    }<br>
-                }<br>
-                three.onclick = function(){<br>
-                    if(Start === true){<br>
-                        Start = false;<br>
-                        Answer.innerHTML = "3"<br>
-                    }<br>
-                    else{<br>
-                        Answer.innerHTML += "3";<br>
-                    }<br>
-                }<br>
-                four.onclick = function(){<br>
-                    if(Start === true){<br>
-                        Start = false;<br>
-                        Answer.innerHTML = "4"<br>
-                    }<br>
-                    else{<br>
-                        Answer.innerHTML += "4";<br>
-                    }<br>
-                }<br>
-                five.onclick = function(){<br>
-                    if(Start === true){<br>
-                        Start = false;<br>
-                        Answer.innerHTML = "5"<br>
-                    }<br>
-                    else{<br>
-                        Answer.innerHTML += "5";<br>
-                    }<br>
-                }<br>
-                six.onclick = function(){<br>
-                    if(Start === true){<br>
-                        Start = false;<br>
-                        Answer.innerHTML = "6"<br>
-                    }<br>
-                    else{<br>
-                        Answer.innerHTML += "6";<br>
-                    }<br>
-                }<br>
-                Null.onclick = function(){<br>
-                    if(Start === true){<br>
-                        Start = false;<br>
-                        Answer.innerHTML = "0"<br>
-                    }<br>
-                    else{<br>
-                        Answer.innerHTML += "0";<br>
-                    }<br>
-                }<br>
-                <br>
-                <br>
-                cooldown.onclick = function(){<br>
-                    Start = true;<br>
-                    Index = undefined;<br>
-                    Answer.innerHTML = "0";<br>
-                }<br>
-                <br>
-                summa.onclick = function(){<br>
-                    if(Start === true){<br>
-                        Start = false;<br>
-                        Answer.innerHTML = "+"<br>
-                    }<br>
-                    else{<br>
-                        Answer.innerHTML += "+";<br>
-                    }<br>
-                }<br>
-                minus.onclick = function(){<br>
-                    if(Start === true){<br>
-                        Start = false;<br>
-                        Answer.innerHTML = "-"<br>
-                    }<br>
-                    else{<br>
-                        Answer.innerHTML += "-";<br>
-                    }<br>
-                }<br>
-                division.onclick = function(){<br>
-                    if(Start === true){<br>
-                        Start = false;<br>
-                        Answer.innerHTML = "/"<br>
-                    }<br>
-                    else{<br>
-                        Answer.innerHTML += "/";<br>
-                    }<br>
-                }<br>
-                multiplication.onclick = function(){<br>
-                    if(Start === true){<br>
-                        Start = false;<br>
-                        Answer.innerHTML = "*"<br>
-                    }<br>
-                    else{<br>
-                        Answer.innerHTML += "*";<br>
-                    }<br>
-                }<br>
-                <br>
-                equally.onclick = function(){<br>
-                    if(isNaN(Answer.innerHTML[Answer.innerHTML.length-1])){<br>
-                    }<br>
-                    else{<br>
-                        let MasNumber = [];<br>
-                        let MasFunction = [];<br>
-                        let MasNumberA = -1;<br>
-                        let MasFunctionA=-1;<br>
-                        if(Answer.innerHTML[0] === "*" || Answer.innerHTML[0] === "/")<br>
-                        {<br>
-                            Answer.innerHTML = "Mistake";<br>
-                                Start = true;<br>
-                                return;<br>
-                        }<br>
-                        for(let i = 0;i &#60; Answer.innerHTML.length;i++){<br>
-                            if(!isNaN(Number(Answer.innerHTML[i]))){<br>
-                                if(Index != "number")<br>
-                                    ++MasNumberA;<br>
-                                if(MasNumber[MasNumberA] === undefined){<br>
-                                    MasNumber[MasNumberA] = Number(Answer.innerHTML[i])<br>
-                                }else{<br>
-                                    MasNumber[MasNumberA] = MasNumber[MasNumberA]*10 + Number(Answer.innerHTML[i]);<br>
-                                }<br>
-                                Index = "number";<br>
-                            }
-                            else if(isNaN(Number(Answer.innerHTML[i+1])) && Answer.innerHTML[i+1] != undefined ){<br>
-                                Answer.innerHTML = "Mistake";<br>
-                                Start = true;<br>
-                                return;<br>
-                            }<br>
-                            else{<br>
-                                if(Answer.innerHTML[i] === "*" || Answer.innerHTML[i] === "/"){<br>
-                                    ++MasFunctionA;<br>
-                                    MasFunction[MasFunctionA] = Answer.innerHTML[i];<br>
-                                    Index = "NotNamber";<br>
-                                }else{<br>
-                                    ++MasFunctionA;<br>
-                                    MasFunction[MasFunctionA] = Answer.innerHTML[i];<br>
-                                    Index = "NotNamber";<br>
-                                }<br>
-                            }<br>
-                        }<br>
-                        console.log(MasNumber, MasFunction)<br>
-                        while(MasFunction.length != 0){<br>
-                            console.log(MasFunction.length);<br>
-                            console.log(MasNumber.length);<br>
-                            for(let i=0;i &#60; MasFunction.length;i++){<br>
-                                if(MasFunction[i] === "*" || MasFunction[MasFunctionA] === "/"){<br>
-                                    if(MasFunction[i] === "*"){<br>
-                                        let param;<br>
-                                        param=MasNumber[i]*MasNumber[i+1];<br>
-                                        MasNumber.splice(i,2,param);<br>
-                                        MasFunction.splice(i,1);<br>
-                                    }<br>
-                                    if(MasFunction[i] === "/"){<br>
-                                        let param;<br>
-                                        param=MasNumber[i]/MasNumber[i+1];<br>
-                                        MasNumber.splice(i,2,param);<br>
-                                        MasFunction.splice(i,1);<br>
-                                    }<br>
-                                    i = 0;<br>
-                                }<br>
-                            }<br>
-                            for(let i=0;i &#60; MasFunction.length;i++){<br>
-                                if(MasFunction[i] === "+"){<br>
-                                    let param;<br>
-                                    param=MasNumber[i]+MasNumber[i+1];<br>
-                                    MasNumber.splice(i,2,param);<br>
-                                    MasFunction.splice(i,1);<br>
-                                }<br>
-                                if(MasFunction[i] === "-"){<br>
-                                    let param;<br>
-                                    param=MasNumber[i]+MasNumber[i+1];<br>
-                                    MasNumber.splice(i,2,param);<br>
-                                    MasFunction.splice(i,1);<br>
-                                }<br>
-                                i = 0;<br>
-                            }<br>
-                        }<br>
-                        Answer.innerHTML = MasNumber[0];<br>
-                    }<br>
-                }<br>
-            </code>
-        </section>
+        <div class="fieldPanda">
+            <img src="OnlineZ.image/tree4.png" class="tree4">
+            <img src="OnlineZ.image/tree4 (1).png" class="tree41">
+            <img src="OnlineZ.image/Panda (1).png" class="panda1">
+            <img src="OnlineZ.image/Bamboo.png" class="bamboo1">
+            <img src="OnlineZ.image/tree4 (2).png" class="tree42">
+        </div>
+        <div class="petsInZoo">
+                <div class="allmenuMein">
+                    <div class="allmenuMeinRow">
+                        <div class="petsInZooLogo">PETS IN ZOO</div>
+                        <div class="petsInZooLikeDiv"><a href="indexMap.html"><img src="OnlineZ.image/Bttn.png" class="petsInZooLike"></a></div>
+                    </div>
+                    <div class="allmenuMeinTableRow">
+                        <div id="petsInZooCarousel" class="carousel">
+                            <div class="allmenuMeinTable" id="petInZooContent">
+                                <div class="imRow">
+                                    <div class="im1 im"><a href="indexZoosPage.html"><img src="OnlineZ.image/Mask Group (14).png"></a></div>
+                                    <div class="im2 im"><a href="indexZoosPageIgl.html"><img src="OnlineZ.image/Mask Group (15).png"></a></div>
+                                    <div class="im3 im"><a href="indexZoosPageGorila.html"><img src="OnlineZ.image/Mask Group (16).png"></a></div>
+                                    <div class="im4 im"><a href="indexZoosPageAligator.html"><img src="OnlineZ.image/Mask Group (17).png"></a></div>
+                                    <div class="im5 im"><a href=""><img src="OnlineZ.image/Mask Group (18).png"></a></div>
+                                    <div class="im6 im"><a href=""><img src="OnlineZ.image/Mask Group (19).png"></a></div>
+                                </div>
+                                <div class="imRow">
+                                    <div class="im1 im"><a href="indexZoosPage.html"><img src="OnlineZ.image/Mask Group (14).png"></a></div>
+                                    <div class="im2 im"><a href="indexZoosPageIgl.html"><img src="OnlineZ.image/Mask Group (15).png"></a></div>
+                                    <div class="im3 im"><a href="indexZoosPageGorila.html"><img src="OnlineZ.image/Mask Group (16).png"></a></div>
+                                    <div class="im4 im"><a href="indexZoosPageAligator.html"><img src="OnlineZ.image/Mask Group (17).png"></a></div>
+                                    <div class="im5 im"><a href=""><img src="OnlineZ.image/Mask Group (18).png"></a></div>
+                                    <div class="im6 im"><a href=""><img src="OnlineZ.image/Mask Group (19).png"></a></div>
+                                </div>
+                                <div class="imRow">
+                                    <div class="im1 im"><a href="indexZoosPage.html"><img src="OnlineZ.image/Mask Group (14).png"></a></div>
+                                    <div class="im2 im"><a href="indexZoosPageIgl.html"><img src="OnlineZ.image/Mask Group (15).png"></a></div>
+                                    <div class="im3 im"><a href="indexZoosPageGorila.html"><img src="OnlineZ.image/Mask Group (16).png"></a></div>
+                                    <div class="im4 im"><a href="indexZoosPageAligator.html"><img src="OnlineZ.image/Mask Group (17).png"></a></div>
+                                    <div class="im5 im"><a href=""><img src="OnlineZ.image/Mask Group (18).png"></a></div>
+                                    <div class="im6 im"><a href=""><img src="OnlineZ.image/Mask Group (19).png"></a></div>
+                                </div>
+                                <div class="cyf im"><img src="OnlineZ.image/Bttn (4).png"></div>
+                            </div>
+                        </div>
+                        <div class="allmenuSecondary">
+                            <div class="i1"><img src="OnlineZ.image/Frame 1340.png"></div>
+                            <div class="i2"><img src="OnlineZ.image/Frame 1340 (1).png"></div>
+                            <div class="i3"><img src="OnlineZ.image/Penguin.png"></div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="payAndFeed">
+            <div class="payAndFeedRow">
+                <div class="payAndFeedText">PAY AND FEED</div>
+                <div class="payAndFeedDonate">DONATE TO VALUNTEERS</div>
+                <div id="payAndFeedModal" class="modal">
+                    <div class="contactUsModalContent">
+                        <div class="logo">DONATE TO VOLUNTEERS</div>
+                        <div class="supportLogo">Support your favourite animals. It is as simple as buying a cup of coffee.</div>
+                        <div class="info">CHOOSE AN ANIMAL</div>
+                        <input type="text">
+                        <div class="info">PAYMENTS</div>
+                        <div class="timeDonate"><button class="a">Monthly</button><button class="b">One-time</button></div>
+                        <div class="moneyDonate"><button class="a">$3</button ><button class="b">$5</button><button class="c">$10</button><button class="d">$25</button></div>
+                        <div class="info">YOUR NAME</div>
+                        <input type="text">
+                        <div class="info">YOUR EMAIL</div>
+                        <input type="text">
+                        <div class="divCard"><img src="OnlineZ.image/Payment Methods.png" class="discountCard"></div>
+                        <input type="text" class="textL" placeholder="      Card Number              MM / YY  CVC">
+                        <button>SEND</button>
+                        <div class="protect"><img src="OnlineZ.image/Frame 1359.png">Your payment is protected</div>
+                    </div>
+                </div>
+            </div>
+            <div class="strelki">
+                <div class="payAndColown">
+                    <div class="payAndImg"><img src="OnlineZ.image/icons8-donate.png" class="im1"></div>
+                    <div class="payAndText">You donate to your favourite animals</div>
+                </div>
+                <img src="OnlineZ.image/Frame 1367.png" class="strelki1">
+                <img src="OnlineZ.image/Frame 1340 (5).png" class="strelka1">
+                <img src="OnlineZ.image/Frame 1340 (6).png" class="strelky2">
+                <div class="payAndColown">
+                    <div class="payAndImg"><img src="OnlineZ.image/icons8-trust.png" class="im2"></div>
+                    <div class="payAndText">Zoo Keepers feed animals with their favourite food</div>
+                </div>
+                <img src="OnlineZ.image/Frame 1367.png" class="strelki2">
+                <img src="OnlineZ.image/Frame 1340 (5).png" class="strelka2">
+                <img src="OnlineZ.image/Frame 1340 (6).png" class="strelky2">
+                <div class="payAndColown">
+                    <div class="payAndImg"><img src="OnlineZ.image/icons8-monkey.png" class="im1"></div>
+                    <div class="payAndText">Animals are healthy and happy</div>
+                </div>
+                <div class="dtv">Donate to volunteers</div>
+            </div>
+        </div>
+        <div class="testimon">
+            <div class="testimoRow1">
+                <div class="testimoRow1Text">TESTIMONIALS</div>
+                <div class="testimoRow1LeaveFeed"><img src="OnlineZ.image/Bttn (1).png"></div>
+                <div id="LeaveFeedModal" class="modal">
+                    <div class="contactUsModalContent">
+                        <div class="logo">LEAVE FEEDBACK</div>
+                        <div class="info">NAME</div>
+                        <input type="text">
+                        <div class="info">EMAIL</div>
+                        <input type="text">
+                        <div class="info">FEEDBACK</div>
+                        <input type="text" class="textL">
+                        <button>SEND</button>
+                    </div>
+                </div>
+            </div>
+            <div class="testimoRow2" id="testimoCarousel">
+                <div class="imRow">
+                    <div class="testimoMasage">
+                        <div class="BG">
+                            <div class="testimoMasageDate">20 Decepmer 2020</div>
+                            <div class="testimoMasageText">Awesome place to observe my favourite aligators at<br>Florida, the quality of the video is great.</div>
+                        </div>
+                        <div class="rectangle"></div>
+                        <div class="testimoPerson">
+                            <img src="OnlineZ.image/Ellipse 14.png">
+                            <div>Adam, Spain</div>
+                        </div>
+                    </div>
+                    <div class="testimoMasage">
+                        <div class="BG">
+                            <div class="testimoMasageDate">20 Decepmer 2020</div>
+                            <div class="testimoMasageText">Awesome place to observe my favourite aligators at<br>Florida, the quality of the video is great.</div>
+                        </div>
+                        <div class="rectangle"></div>
+                        <div class="testimoPerson">
+                            <img src="OnlineZ.image/Ellipse 14 (1).png">
+                            <div>Chris, Australia</div>
+                        </div>
+                    </div>
+                    <div class="testimoMasage">
+                        <div class="BG">
+                            <div class="testimoMasageDate">20 Decepmer 2020</div>
+                            <div class="testimoMasageText">Awesome place to observe my favourite aligators at<br>Florida, the quality of the video is great.</div>
+                        </div>
+                        <div class="rectangle"></div>
+                        <div class="testimoPerson">
+                            <img src="OnlineZ.image/Ellipse 14 (2).png">
+                            <div>Amely, USA</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="imRow">
+                    <div class="testimoMasage">
+                        <div class="BG">
+                            <div class="testimoMasageDate">20 Decepmer 2020</div>
+                            <div class="testimoMasageText">Awesome place to observe my favourite aligators at<br>Florida, the quality of the video is great.</div>
+                        </div>
+                        <div class="rectangle"></div>
+                        <div class="testimoPerson">
+                            <img src="OnlineZ.image/Ellipse 14.png">
+                            <div>Adam, Spain</div>
+                        </div>
+                    </div>
+                    <div class="testimoMasage">
+                        <div class="BG">
+                            <div class="testimoMasageDate">20 Decepmer 2020</div>
+                            <div class="testimoMasageText">Awesome place to observe my favourite aligators at<br>Florida, the quality of the video is great.</div>
+                        </div>
+                        <div class="rectangle"></div>
+                        <div class="testimoPerson">
+                            <img src="OnlineZ.image/Ellipse 14 (1).png">
+                            <div>Chris, Australia</div>
+                        </div>
+                    </div>
+                    <div class="testimoMasage">
+                        <div class="BG">
+                            <div class="testimoMasageDate">20 Decepmer 2020</div>
+                            <div class="testimoMasageText">Awesome place to observe my favourite aligators at<br>Florida, the quality of the video is great.</div>
+                        </div>
+                        <div class="rectangle"></div>
+                        <div class="testimoPerson">
+                            <img src="OnlineZ.image/Ellipse 14 (2).png">
+                            <div>Amely, USA</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimoRow1LeaveFeed2"><a href=""><img src="OnlineZ.image/Bttn (1).png"></a></div>
+            </div>
+        </div>
+        <div class="lookAtThisAnimals">
+            <div class="lookAtThisAnimalsLogo">LOOK AT THIS BEAUTIFUL ANIMALS</div>
+            <div class="atherAnimals">
+                <div class="atherAnimalsRow" id="atherAnimalsContent">
+                    <div class="atRow">
+                        <div class="atherAnimalsFace">
+                            <a href="indexZoosPage.html"><img src="OnlineZ.image/Mask Group.png"></a>
+                            <div>PANDAS</div>
+                        </div>
+                        <div class="atherAnimalsFace">
+                        <a href="indexZoosPageGorila.html" class="gor"><img src="OnlineZ.image/Mask Group (1).png"></a>
+                        <div>GORILLAS</div>
+                        </div>
+                        <div class="atherAnimalsFace">
+                            <a href="indexZoosPageIgl.html"><img src="OnlineZ.image/Mask Group (2).png"></a>
+                            <div>EAGLES</div>
+                        </div>
+                        <div class="atherAnimalsFace">
+                            <a href="indexZoosPageAligator.html"><img src="OnlineZ.image/Mask Group (3).png"></a>
+                            <div>ALIGATORS</div>
+                        </div>
+                        <div class="atherAnimalsFace">
+                            <a href=""><img src="OnlineZ.image/Mask Group (4).png"></a>
+                            <div>ELEPHANTS</div>
+                        </div>
+                        <div class="atherAnimalsFace">
+                            <a href=""><img src="OnlineZ.image/Mask Group (5).png"></a>
+                            <div>LEMURS</div>
+                        </div>
+                        <div class="atherAnimalsFaceLast">
+                            <a href="indexZoosPage.html"><img src="OnlineZ.image/Mask Group.png"></a>
+                            <div>PANDAS</div>
+                        </div>
+                    </div>
+                    <div class="atRow">
+                        <div class="atherAnimalsFace">
+                            <a href="indexZoosPage.html"><img src="OnlineZ.image/Mask Group.png"></a>
+                            <div>PANDAS</div>
+                        </div>
+                        <div class="atherAnimalsFace">
+                            <a href="indexZoosPageGorila.html" class="gor"><img src="OnlineZ.image/Mask Group (1).png"></a>
+                            <div>GORILLAS</div>
+                        </div>
+                        <div class="atherAnimalsFace">
+                            <a href="indexZoosPageIgl.html"><img src="OnlineZ.image/Mask Group (2).png"></a>
+                            <div>EAGLES</div>
+                        </div>
+                        <div class="atherAnimalsFace">
+                            <a href="indexZoosPageAligator.html"><img src="OnlineZ.image/Mask Group (3).png"></a>
+                            <div>ALIGATORS</div>
+                        </div>
+                        <div class="atherAnimalsFace">
+                            <a href=""><img src="OnlineZ.image/Mask Group (4).png"></a>
+                            <div>ELEPHANTS</div>
+                        </div>
+                        <div class="atherAnimalsFace">
+                            <a href=""><img src="OnlineZ.image/Mask Group (5).png"></a>
+                            <div>LEMURS</div>
+                        </div>
+                        <div class="atherAnimalsFaceLast">
+                            <a href="indexZoosPage.html"><img src="OnlineZ.image/Mask Group.png"></a>
+                            <div>PANDAS</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="atherAnimalsArrows">
+                    <img src="OnlineZ.image/Frame 1340 (2).png" class="AnimalsArrows1">
+                    <img src="OnlineZ.image/Frame 1340 (3).png" class="AnimalsArrows2">
+                </div>
+            </div>
+            <div class="atherAnimalsArrows2Row"><img src="OnlineZ.image/Frame 1340 (7).png" class="atherAnimalsArrows2"></div>
+        </div>
     </main>
     <footer>
-        <section class = "Contacts">
-            <h3 class = "Cont">Contacts:</h3>
-            <ul>
-                <li><a href = "https://vk.com/feed">VK</a></li>
-                <li><a href = "https://mail.ru/">mail</a></li>
-                <li><div>MTC +375292162852</div></li>
-            </ul>
-        </section>
+        <img src="OnlineZ.image/Frame 1274 (1).png">
+        <a href="index.html">ABOUT</a>
+        <a href="indexMap.html">MAP</a>
+        <a href="indexZoosPage.html">ZOOS</a>
+        <button>CONTACT US</button>
+        <a href="">DESIGN</a>
+        <div class="footerContactsRow">
+            <div class="footerContacts">
+                <div class="t1">DESIGN BY LEMESHKO KATERYNA</div>
+                <div>@RSSCHOOL AND @YEM DIGITAL 2021</div>
+            </div>
+        </div>
     </footer>
 </body>
+<script src="script.js"></script>
 </html>

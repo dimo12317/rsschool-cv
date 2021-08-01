@@ -1,192 +1,1759 @@
-*{
+
+*{  
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: cornsilk;
+a{
+    text-decoration: none;
 }
-
+body{
+    background-color: #F3F7F8;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+#contactUsModal{
+    margin-left: 0px;
+}
 header{
-    margin: 1%;
     display: flex;
     flex-direction: row;
-    width: 98%;
-    height: 150px;
-    background-color: white;
-    border-radius: 20px;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+    background: #2A8086;
+    box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, .5);
 }
+header .olinezLogo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 11.40625%;
+    margin-right: 1px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34.8387px;
+    line-height: 41px;
+}
+header .olinezLogo .glasses{
+    width: 71.42px;
+    height: 24.39px;
+    margin-left: 5.23px;
+}
+header .controlPanel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+header .controlPanel .about{
+    text-decoration: underline #C5E1E6;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #C5E1E6;
+}
+header .controlPanel div{
+    margin-left: 52px;
+    white-space: nowrap;
 
-header .CV{
-    margin-left: 25px;
-    margin-top: 25px;;
-    width: 50px;
-    height: 50px;
-    font-size: 100px;
+}
+header .controlPanel button{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #C5E1E6;
+    white-space: nowrap;
+    border-radius: 100px;
+    border: 1px solid #2A8086;
+    transition: 0.5s;
+    padding: 0px 10px; 
+    background-color: #2A8086; 
+}
+header .controlPanel button:hover{
+    border-color: #C5E1E6;
+    transition: 0.5s;
+}
+header .controlPanel .contactUsModalContent{
+    background-color: #E5E5E5;
+    padding: 46px 60px 42px;
+    width: 29.58%;
+    margin: 7% auto;
+    display: flex;
+    flex-direction: column;
+}
+header .controlPanel .contactUsModalContent input{
+    width: 100%;
+    height: 54px;
+}
+header .controlPanel .contactUsModalContent .logo{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #0D444D;
+    margin-bottom: 26px;
+}
+header .controlPanel .contactUsModalContent div{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #0D444D;
+    margin-bottom: 8px;
+}
+header .controlPanel .contactUsModalContent input{
+    height: 54px;
+    margin-bottom: 20px;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+header .controlPanel .contactUsModalContent button{
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #C5E1E6;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+header .controlPanel .contactUsModalContent button:hover{
+    transition: 0.5s;
+    background-color: yellow;
+}
+header .controlPanel .contactUsModalContent .textL{
+    height: 264px;
+    margin-bottom: 20px;
+}
+header .controlPanel a{
+ font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #C5E1E6;
+    white-space: nowrap;
+    border-radius: 100px;
+    border: 1px solid #2A8086;
+    transition: 0.5s;
+    padding: 0px 10px;
+}
+header .controlPanel a:hover{
+    border-color: #C5E1E6;
+    transition: 0.5s;
+}
+header .onlineLogoSearch{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 4.6875%;
+}
+header .onlineLogoSearch div,button:hover{
+    cursor: pointer;
+}
+header .onlineLogoSearch button{
+    background-color: #2A8086;
+}
+header .onlineLogoSearch div,button{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #C5E1E6;
+    white-space: nowrap;
+}
+header .onlineLogoSearch .logIn{
+    margin-left: 29px;
+    padding: 15px 14px;
+    border-radius: 100px;
+    border: 1px solid #2A8086;
+    transition: 0.5s;
+}
+header .onlineLogoSearch .logIn:hover{
+    border-color: #C5E1E6;
+    transition: 0.5s;
+}
+header .onlineLogoSearch .modalHeader{
+    width: 29.58%;
+    margin:  2% auto 0px;
+    padding: 0px 60px;
+    background-color: #2A8086;
+    height: 125px;
     text-align: center;
-    color: black;
+}
+header .onlineLogoSearch .modalHeader img{
+    margin-top: 32px;
+}
+header .onlineLogoSearch .logInModalContent{
+    background-color: #E5E5E5;
+    padding: 46px 60px 42px;
+    width: 29.58%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+header .onlineLogoSearch .logInModalContent .chose{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+header .onlineLogoSearch .logInModalContent .chose div{
+    width: 50%;
+    height: 58px;
+    text-align: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #0D444D;
+    text-align: center;
+}
+header .onlineLogoSearch .logInModalContent .chose .a{
+    border-bottom-width: 2px; 
+    border-bottom-style: solid; 
+    border-bottom-color: #C5E1E6;
+}
+header .onlineLogoSearch .logInModalContent .chose .b{
+    border-bottom-width: 2px; 
+    border-bottom-style: solid; 
+    border-bottom-color: #2A8086;
+}
+header .onlineLogoSearch .logInModalContent .choseMessage{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+header .onlineLogoSearch .logInModalContent .choseMessage div{
+    display: flex;
+    flex-direction: row;
+    padding-left: 15.5px;
+    width: 48%;
+    height: 54px;
+    background-color: white;
+    align-items: center;
+}
+header .onlineLogoSearch .logInModalContent .choseMessage .a{
+    margin-right: 16px;
+    border-radius: 5px;
+    border-style: hidden;
+    border-color: #2A8086;
+}
+header .onlineLogoSearch .logInModalContent .choseMessage .b{
+    border-radius: 5px;
+    border-style: hidden;
+    border-color: #2A8086;
+}
+header .onlineLogoSearch .logInModalContent .choseMessage div img{
+    margin-right: 15.5px;
+}
+header .onlineLogoSearch .logInModalContent input{
+    width: 100%;
+    height: 54px;
+}
+header .onlineLogoSearch .logInModalContent .logo{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #0D444D;
+    margin-bottom: 26px;
+}
+header .onlineLogoSearch .logInModalContent div{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #0D444D;
+    margin-bottom: 8px;
+}
+header .onlineLogoSearch .logInModalContent .createAc{
+    display: none;
+}
+header .onlineLogoSearch .logInModalContent .useAg{
+    align-items: center;
+    margin-bottom: 32px;
+}
+header .onlineLogoSearch .logInModalContent img{
+    margin-right: 22px;
+}
+header .onlineLogoSearch .logInModalContent input{
+    height: 54px;
+    margin-bottom: 20px;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+header .onlineLogoSearch .logInModalContent button{
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #C5E1E6;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+header .onlineLogoSearch .logInModalContent button:hover{
+    transition: 0.5s;
+}
+header .onlineLogoSearch .logInModalContent .textL{
+    height: 264px;
+    margin-bottom: 20px;
+}
+header .onlineLogoSearch .signUp{
+    margin-left: 3px;
+    padding: 15px 14px;
+    border: 1px solid #C5E1E6;
+    box-sizing: border-box;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+header .onlineLogoSearch .regAc{
+    display: none;
+    margin-left: 3px;
+    padding: 15px 14px;
+    border: 1px solid #C5E1E6;
+    box-sizing: border-box;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+header .onlineLogoSearch .logOut{
+    background-color: #2A8086;
+    display: none;
+    position: relative;
+    top: 60px;
+    left: 122px;
+    margin-left: 3px;
+    padding: 15px 14px;
+    border: 1px solid #C5E1E6;
+    box-sizing: border-box;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+header .onlineLogoSearch .signUp:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+header .onlineLogoSearch .personMenu{
+    display: none;
+}
+main{
+    box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, .5);
+    width: 100%;
+}
+main .WatchFavoriteAnimal{
+    display: flex;
+    flex-direction: row;
+    background-image: url(OnlineZ.image/Frame1304.png);
+    width: 100%;
+}
+main .textFavoriteAnimal{
+    display: flex;
+    flex-direction: column;
+    margin-left: 11.40625%;
+    margin-top: 103px;
+}
+main .textFavoriteAnimal .br1{
+    display: none;
+}
+main .textFavoriteAnimal div{
+    display: flex;
+    flex-direction: column;
+    width: 573px;
+    white-space: nowrap;
+}
+main .textFavoriteAnimal .textFavoriteAnimalRow{
+    display: flex;
+    flex-direction: row;
+}
+main .textFavoriteAnimal .tFA31{
+    display: none;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    margin-left: 16px;
+    padding: 10px 58px 9px 58px;
+    background: #C5E1E6;
+    border-radius: 100px;
+}
+main .textFavoriteAnimal .tFA1{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 85px;
+    color: #F3F7F8;
+}
+main .textFavoriteAnimal .tFA2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 27px;
+    color: #F3F7F8;
+}
+main .textFavoriteAnimal .tFA3{
+    text-decoration: none;
+    text-align: center;
+    width: 90px;
+    padding: 14px 84px;
+    letter-spacing: -0.05em;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #0D444D;
+    background: #FFFFFF;
+    border-radius: 100px;
+    margin-top: 87px;
+    transition: 0.5s;
+}
+main .textFavoriteAnimal .tFA3:hover{
+    background-color: yellow;
+    transition: 0.5s;
+}
+main .textFavoriteAnimal .tFA4{
+    margin-top: 259px;
+    color: #0D444D;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+}
+main .videoFavoriteAnimal{
+    background-image: url("OnlineZ.image/Panda.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 41.8713542%;
+    height: 666px;
+    margin-top: 48px;
+    margin-left: 4.6875%;
+}
+main .videoFavoriteAnimal .pandaimg{
+    margin-top: 37.6233032%;
+    margin-left: 47.7524876%;
+    padding: 0;
+    width: 98.36px;
+    height: 73.77px;
+}
+main .threeImage{
+    display: flex;
+    flex-direction: row;
+    margin-top: 98px;
+    margin-bottom: 98px;
+    width: 100%;
+    height: 179px;
+    Justify-content: space-around;
+}
+main .threeImage .colownImg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 179px;
+}
+main .threeImage .threeImage1{
+    display: flex;
+    width: 50px;
+    height: 40px;
+    padding: 53px 47px 52px 48px;
+    margin-bottom: 14px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.06);
+    border-radius: 72.5px;
+}
+main .threeImage .threeImage2{
+    display: flex;
+    width: 54px;
+    height: 48.23px;
+    padding: 49.1px 45px 47.67px 46px;
+    margin-bottom: 14px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.06);
+    border-radius: 72.5px;
+}
+main .threeImage .threeImage3{
+    display: flex;
+    width: 60px;
+    height: 50px;
+    padding: 48px 47px 47px 48px;
+    margin-bottom: 14px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.06);
+    border-radius: 72.5px;
+}
+main .fieldPanda{
+    background-image: url(OnlineZ.image/Frame\ 1265\ \(1\).png);
+    width: 100%;
+    height: 523px;
+    display: flex;
+    flex-direction: row;
+}
+main .fieldPanda .tree4{
+    width: 130.13px;
+    height: 230px;
+    margin-left: 220px;
+    margin-top: 46px;
+}
+main .fieldPanda .tree41{
+    width: 89.39px;
+    height: 158px;
+    margin-left: 444.87px;
+    margin-top: 106px;
+}
+main .fieldPanda .panda1{
+    position: relative;
+    width: 163px;
+    height: 155px;
+    margin-left: 65.61px;
+    margin-top: 204px;
+    z-index: 1;
+}
+main .fieldPanda .bamboo1{
+    position: relative;
+    width: 147.18px;
+    height: 280px;
+    right: 74px;
+    margin-top: 91px;
+    z-index: 2;
+}
+main .fieldPanda .tree42{
+    width: 130.13px;
+    height: 230px;
+    margin-left: 354.82px;
+    margin-top: 162px;
+}
+main .petsInZoo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 1037px;
+    margin-left: 11.4583333%;
+}
+main .petsInZoo .allmenuMein{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    width: 100%;
+}
+main .petsInZoo .allmenuMein .allmenuMeinRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 66px;
+    width: 100%;
+}
+main .petsInZoo .allmenuMein .allmenuMeinRow .petsInZooLogo{
+    display: flex;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #0D444D;
+    width: 141px;
+    height: 48px;
+    white-space: nowrap;
+}
+main .petsInZoo .allmenuMein .allmenuMeinRow .petsInZooLikeDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 81%;
+}
+main .petsInZoo .allmenuMein .allmenuMeinRow .petsInZooLikeDiv a{
+    margin-right: 230px;
+}
+main .petsInZoo .allmenuMein .allmenuMeinRow .petsInZooLike{
+    width: 331px;
+    height: 52px;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+main .petsInZoo .allmenuMein .allmenuMeinRow .petsInZooLike:hover{
+    background-color: yellow;
+    transition: 0.5s;
+}
+main .petsInZoo .allmenuMeinTableRow{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 88%;
+}
+main .carousel{
+    overflow: auto;
+    scroll-behavior: smooth;
+    width: 77.0833333%;
+    height: 88%;
+}
+main .petsInZoo .allmenuMeinTable{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+main .petsInZoo .allmenuMeinTable .imRow{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+main .petsInZoo .allmenuMeinTable .im{
+    background-repeat: no-repeat;
+    width: 32.4324324%;
+    height: 364px;
+    background-size: 100% 100%;
+}
+main .petsInZoo .allmenuMeinTable img{
+    margin-top: 5.49450549%;
+    margin-left: 26.25%;
+    width: 47.6916667%;
+    height: 60.7142857%;
+}
+main .petsInZoo .allmenuMeinTable .cyf{
+    display: none;
+}
+main .petsInZoo .allmenuMeinTable img:hover{
+    transform: rotate(15deg);
+    transition-duration: 1s
+}
+main .petsInZoo .allmenuMeinTable img{
+    transform: rotate( 0deg);
+    transition-duration: 1s
+}
+main .petsInZoo .allmenuMeinTable .im1{
+    background-image: url(OnlineZ.image/Frame\ 1233.png);
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+main .petsInZoo .allmenuMeinTable .im2{
+    background-image: url(OnlineZ.image/Frame\ 1234.png);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+main .petsInZoo .allmenuMeinTable .im3{
+    background-image: url(OnlineZ.image/Frame\ 1235.png);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+main .petsInZoo .allmenuMeinTable .im4{
+    background-image: url(OnlineZ.image/Frame\ 1237.png);
+    margin-right: 10px;
+}
+main .petsInZoo .allmenuMeinTable .im5{
+    background-image: url(OnlineZ.image/Frame\ 1238.png);
+    margin-right: 10px;
+}
+main .petsInZoo .allmenuMeinTable .im6{
+    background-image: url(OnlineZ.image/Frame\ 1239.png);
+}
+main .petsInZoo .allmenuSecondary{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3.56770833%;
+}
+main .petsInZoo .allmenuSecondary .i1{
+    margin-top: 336.5px;
+}
+main .petsInZoo .allmenuSecondary .i2{
+    margin-top: 18px;
+}
+main .petsInZoo .allmenuSecondary .i3{
+    margin-top: 258.65px;
+}
+main .petsInZoo .allmenuSecondary .i1,.i2:hover{
+    cursor: pointer;
+}
+main .payAndFeed{
+    display: flex;
+    background-image: url(OnlineZ.image/Frame\ 1266.png);
+    background-size: 100% 564px;
+    flex-direction: column;
+    width: 100%;
+    height: 564px;
+}
+main .payAndFeed .payAndFeedRow{
+    display: flex;
+    flex-direction: row;
+    margin-top: 90px;
+}
+main .payAndFeed .payAndFeedText{
+    margin-left: 11.4583333%;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #C5E1E6;
+    white-space: nowrap;
+}
+main .payAndFeed .payAndFeedDonate{
+    display: flex;
+    width: 10.4166667%;
+    height: 24px;
+    margin-left: 50%;
+    padding: 14px 4.0625%;
+    background: #C5E1E6;
+    border-radius: 100px;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #0D444D;
+    letter-spacing: -0.05em;
+    white-space: nowrap;
+    transition: 0.5s;
+}
+main .payAndFeed .payAndFeedDonate:hover{
+    background-color: yellow;
+    transition: 0.5s;
+}
+main .payAndFeed .contactUsModalContent{
+    background-color: #E5E5E5;
+    padding: 46px 60px 42px;
+    width: 29.58%;
+    margin: 7% auto;
+    display: flex;
+    flex-direction: column;
+}
+main .payAndFeed .contactUsModalContent input{
+    width: 100%;
+    height: 54px;
+}
+main .payAndFeed .contactUsModalContent .logo{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #0D444D;
+    margin-bottom: 26px;
+}
+main .payAndFeed .contactUsModalContent div{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #0D444D;
+    margin-bottom: 8px;
+}
+main .payAndFeed .contactUsModalContent input{
+    height: 54px;
+    margin-bottom: 20px;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+main .payAndFeed .contactUsModalContent button{
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    background-color: #2A8088;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+main .payAndFeed .contactUsModalContent button:hover{
+    transition: 0.5s;
+    background-color: yellow;
+}
+main .payAndFeed .contactUsModalContent .textL{
+    margin-bottom: 20px;
+    background-image: url('OnlineZ.image/Credit Card.png');
+    background-position: 16px;
+    background-repeat: no-repeat;
+}
+main .payAndFeed .contactUsModalContent .protect{
+    margin-top: 14px;
+}
+main .payAndFeed .contactUsModalContent .protect img{
+    margin-right: 12px;
+}
+main .payAndFeed .contactUsModalContent .supportLogo{
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2D2D2D;
+    margin-bottom: 32px;
+}
+main .payAndFeed .contactUsModalContent .timeDonate button{
+    width: 50%;
+    height: 54px;
+    border-radius: 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    border: 1px solid #19707D;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+main .payAndFeed .contactUsModalContent .timeDonate button:hover{
+    background-color: #98dddd
+}
+main .payAndFeed .contactUsModalContent .timeDonate .b{
+    background-color: #E5E5E5;
+    border-radius: 0px 10px 10px 0px;
+    color: #19707D;
+}
+main .payAndFeed .contactUsModalContent .timeDonate .a{
+    border-radius: 10px 0px 0px 10px;
+}
+main .payAndFeed .contactUsModalContent .moneyDonate button{
+    width: 16.52%;
+    height: 54px;
+    border: 1px solid #19707D;
+    border-radius: 10px;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+    margin-right: 16px;
+    margin-bottom: 24px;
+    background-color: #E5E5E5;
+    color: #19707D;
+}
+main .payAndFeed .contactUsModalContent .moneyDonate .a{
+    background-color: #19707D;
+    color: #FFFFFF;
+}
+main .payAndFeed .contactUsModalContent .moneyDonate button:hover{
+    background-color: #98dddd
+}
+main .payAndFeed .contactUsModalContent .divCard{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin: 0px;
+    
+}
+main .payAndFeed .contactUsModalContent .discountCard{
+    width: 101.33px;
+    height: 16px;
+    margin-bottom: 8px;
+}
+main .payAndFeed .strelki .dtv{
+    display: none;
+}
+main .payAndFeed .strelki .payAndColown{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+main .payAndFeed .strelki .payAndColown .im1{
+    width: 52px;
+    height: 43.99px;
+    padding: 54px 49px 47px 44px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 50px rgba(185, 213, 217, 0.6);
+    border-radius: 72.5px;
+    margin-bottom: 14px;
+}
+main .payAndFeed .strelki .payAndColown .im2{
+    width: 64px;
+    height: 64px;
+    padding: 42px 39px 39px 42px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 50px rgba(185, 213, 217, 0.6);
+    border-radius: 72.5px;
+    margin-bottom: 14px;
+}
+main .payAndFeed .strelki .payAndColown .im3{
+    width: 52px;
+    height: 50px;
+    padding: 48px 46px 47px 47px;
+}
+main .payAndFeed .strelki .payAndColown .payAndText{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #C5E1E6;
+}
+main .payAndFeed .strelki{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 140px;
+    height: 52px;
+    align-items: center;
+    margin-top: 143px;
+}
+main .payAndFeed .strelka1, .strelka2{
+    display: none;
+}
+main .payAndFeed .strelky1, .strelky2{
+    display: none;
+}
+main .payAndFeed .strelki1{
+    width: 15.7291667%;
+}
+main .payAndFeed .strelki2{
+    width: 15.7291667%;
+}
+main .payAndFeed .payAndFeedDonate:hover{
+ cursor: pointer;
+}
+main .testimon{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    height: 463px;
+    width: 77.0833333%;
+    margin-left: 11.4583333%;
+}
+main .testimon .testimoRow1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 52px;
+}
+main .testimon .testimoRow1 .testimoRow1Text{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #0D444D;
+}
+main .testimon .testimoRow1 .testimoRow1LeaveFeed{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 100px;
+}
+main .testimon .testimoRow1 .contactUsModalContent{
+    background-color: #E5E5E5;
+    padding: 46px 60px 42px;
+    width: 29.58%;
+    margin: 7% auto;
+    display: flex;
+    flex-direction: column;
+}
+main .testimon .testimoRow1 .contactUsModalContent input{
+    width: 100%;
+    height: 54px;
+}
+main .testimon .testimoRow1 .contactUsModalContent .logo{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #0D444D;
+    margin-bottom: 26px;
+}
+main .testimon .testimoRow1 .contactUsModalContent div{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #0D444D;
+    margin-bottom: 8px;
+}
+main .testimon .testimoRow1 .contactUsModalContent input{
+    height: 54px;
+    margin-bottom: 20px;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+main .testimon .testimoRow1 .contactUsModalContent button{
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    background-color: #2A8088;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+main .testimon .testimoRow1 .contactUsModalContent button:hover{
+    transition: 0.5s;
+    background-color: yellow;
+}
+main .testimon .testimoRow1 .contactUsModalContent .textL{
+    height: 264px;
+    margin-bottom: 20px;
+}
+main .testimon .testimoRow1 .testimoRow1LeaveFeed img{
+    border-radius: 100px;
+    transition: 0.5s;
+}
+main .testimon .testimoRow1 .testimoRow1LeaveFeed img:hover{
+    background-color: yellow;
+    transition: 0.5s;
+}
+main .testimon .testimoRow2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    margin-top: 52px;
+    width: 100%;
+}
+main .testimon .imRow{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+main .testimon .testimoMasage{
+    width: 32.4324324%; 
+    height: 264px;
+    margin-right: 20px;
+}
+main .testimon .testimoRow1LeaveFeed2{
+    display: none;
+}
+main .testimon .testimoMasage .BG{
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%; 
+    height: 170px;
+    padding-top: 0.1px;
+}
+main .testimon .rectangle{
+    width: 1px;
+    margin-left: 55px;
+    border: 20px solid transparent; 
+    border-top: 20px solid #FFFFFF;
+    height: 1px;
+}
+main .testimon .testimoMasage .testimoPerson{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    bottom: 18px
+}
+main .testimon .testimoMasage .testimoPerson img{
+    margin-left: 19px;
+    margin-right: 16px;
+    width: 68px;
+    height: 68px;
+}
+main .testimon .testimoMasage .testimoPerson div{
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
 }
 
-header .referens{
+main .testimon .testimoMasage .testimoMasageDate{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #B3B3B3;
+    margin: 28px 45px 9px;
+    height: 16px;
+}
+main .testimon .testimoMasage .testimoMasageText{
+    height: 38px;
+    margin: 0px 45px;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2D2D2D;
+} 
+main .lookAtThisAnimals{
+    display: flex;
+    flex-direction: column;
+    width: 72.5239583%;
+    margin-left: 11.4583333%;
+}
+main .lookAtThisAnimals .lookAtThisAnimalsLogo{
+    display: flex;
+    margin-bottom: 66px;
+    height: 28px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #0D444D;
+}
+main .lookAtThisAnimals .atherAnimals{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 116.7px;
+    width: 100%;
+    height: 100px;
+}
+main .lookAtThisAnimals .atherAnimals .atherAnimalsRow{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    width: 100%;
+}
+main .lookAtThisAnimals .atherAnimals .atRow{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 40px;
-    width: 40%;
-    margin-top: 110px;
-    margin-left: 50%;
-
+    flex-wrap: nowrap;
+    overflow: hidden;
+    margin-right: 37px;
 }
-
-header .referens a:hover{
-    text-decoration: underline;
+main .lookAtThisAnimals .atherAnimals .atherAnimalsFace{
+    display: flex;
+    flex-direction: column;
 }
-
-header .referens a{
-    cursor: pointer;
-    font-size: 20px;
+main .lookAtThisAnimals .atherAnimals img{
+    width: 76px;
+    height: 73.37px;
+    margin-bottom: 8.63px;
 }
-
-main .Foto{
+main .lookAtThisAnimals .atherAnimals div{
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #2D2D2D;
+}
+main .lookAtThisAnimals .atherAnimalsArrows2Row{
+    display: none;
+}
+main .lookAtThisAnimals .atherAnimals .atherAnimalsFaceLast{
+    display: flex;
+    flex-direction: column;
+    margin-right: 69.46px;
+}
+main .lookAtThisAnimals .atherAnimals .atherAnimalsArrows{
+    display: flex;
+    flex-direction: column;
+}
+main .lookAtThisAnimals .atherAnimals .atherAnimalsArrows img{
+    width: 15px;
+    height: 21px;
+}
+main .lookAtThisAnimals .atherAnimals .atherAnimalsArrows .AnimalsArrows1{
+    margin-top: 13.5px;
+    margin-bottom: 30px;
+}
+footer{
+    box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, .5);
     width: 100%;
-    text-align: center;
-    margin: 1%;
-    background-color: white;
-    border-radius: 20px;
-}
-
-main .Foto img{
-    height: 400px;
-    width: 350px;
-}
-
-main .AboutMe{
-    display: flex;
-    width: 98%;
-    margin: 1%;
-    border-radius: 20px;
-    flex-direction: row;
-    align-items: center;
-    height: 300px;
-    background-color: white;
-}
-
-main .AboutMe .Hello{
-    font-size: 50px;
-    margin-left: 30px;
-}
-main .AboutMe .info{
-    font-size: 40px;
-    margin-left: 100px;
-    text-align: center;
-}
-main .Skils{
-    margin: 1%;
-    width: 98%;
-    background-color: white;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-main .Skils h3{
-    font-size: 50px;
-}
-main .Skils div{
-    text-align: center;
-    font-size: 50px;
-    color: black;
-    text-align: center;
-}
-main .Skils ul{
+    height: 200px;
+    background-color: #196469;
     display: flex;
     flex-direction: row;
-    margin-top: 15px;
-    width: 98%;
-    font-size: 30px;
-    justify-content: space-around;
-    text-align: center;
+    align-items: center;
+    white-space: nowrap;
 }
-main .Education{
-    margin: 1%;
-    width: 98%;
-    background-color: white;
-    border-radius: 20px;
+footer img{
+    margin-right: 25px;
+    margin-left: 11.4583333%;
+}
+footer a{
+    margin-left: 2.70833333%;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #C5E1E6;
+    border: 1px solid #196469;
+    transition: 0.5s;
+    border-radius: 100px;
+    padding: 0px 10px;
+}
+footer a:hover{
+    border-color: #C5E1E6;
+}
+footer button{
+    margin-left: 2.70833333%;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #C5E1E6;
+    border: 1px solid #196469;
+    transition: 0.5s;
+    border-radius: 100px;
+    padding: 0px 10px;
+    background-color: #196469;
+}
+footer button:hover{
+    border-color: #C5E1E6;
+}
+footer .footerContactsRow{
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    margin-right: 9.19080919%;
+}
+footer .footerContacts{
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #C5E1E6;
 }
-main .Education .d1{
-    margin-left: 30px;
-    margin-top: 20px;
-    font-size: 50px;
-}
-main .Education .d2{
-    margin-left: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 30px;
-}
-main .English{
-    margin: 1%;
-    width: 98%;
-    background-color: white;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-}
-main .English .d1{
-    margin-left: 30px;
-    margin-top: 20px;
-    font-size: 50px;
-}
-main .English .d2{
-    margin-left: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 30px;
+footer .footerContacts .t1{
+   padding-left: 37px;
 }
 
-main .MyCode{
-    margin: 1%;
-    width: 98%;
-    background-color: white;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
+@media screen and (min-width: 1200px){
+    header .onlineLogoSearch .personImg{
+        display: none;
+    }
 }
-main .MyCode h3{
-    margin-left: 30px;
-    margin-top: 20px;
-    font-size: 50px;
+@media screen and (max-width: 1500px){
+    main .payAndFeed .payAndFeedDonate{
+        padding: 14px 4.0625% 14px 15px;
+    }
+    main .petsInZoo .allmenuSecondary{
+        margin-left: 2%;
+    }
 }
-main .MyCode code{
-    margin-left: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 20px;
+@media screen and (max-width: 1200px){
+    header .onlineLogoSearch .personImg{
+        display: none;
+    }
+    header .olinezLogo{
+        margin-left: 30px;
+        margin-right: 11px;
+    }
+    header .controlPanel div{
+        margin-left: 10%;
+    }
+    header .onlineLogoSearch{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 30px;
+    }
+    header .onlineLogoSearch .logIn{
+        display: none;
+    }
+    header .onlineLogoSearch .signUp{
+        display: none;
+    }
+    header .onlineLogoSearch .personImg{
+        display: flex;
+        margin-left: 31px;
+    }
+    main .textFavoriteAnimal{
+        width: 419px;
+        margin-left: 30px;
+        margin-top: 0;
+    }
+    main .textFavoriteAnimal .tFA1{
+        margin-top: 90px;
+        font-size: 48px;
+    }
+    main .textFavoriteAnimal .tFA2{
+        margin-top: 30px;
+    }
+    main .textFavoriteAnimal .tFA3{
+        margin-top: 37px;
+    }
+    main .textFavoriteAnimal .tFA4{
+        margin-top: 203px;
+    }
+    main .videoFavoriteAnimal{
+        margin-top: 46px;
+        width: 559.65px;
+        height: 463.63px;
+        margin-left: 11.6%;
+        background-image: url("OnlineZ.image/Panda (2).png");
+    }
+    main .WatchFavoriteAnimal{
+        background-image: url("OnlineZ.image/Frame 1294.png");
+        background-repeat: no-repeat;
+    }
+    main .WatchFavoriteAnimalХ{
+        height: 657px;
+    }
+    main .threeImage{
+        margin-top: 30px;
+    }
+    main .petsInZoo{
+        height: 847.5px;
+    }
+    main .petsInZoo .allmenuMein{
+        margin-left: 30px;
+        width: 100%;
+    }
+    main .petsInZoo .allmenuMein .allmenuMeinRow .petsInZooLikeDiv{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-end;
+    }
+    main .petsInZoo .allmenuMein .allmenuMeinRow .petsInZooLikeDiv a{
+        margin-right: 30px;
+    }
+    main .petsInZoo .allmenuMein .allmenuMeinRow .petsInZooLogo{
+        width: 141px;
+    }
+    main .petsInZoo .allmenuMein .allmenuMeinRow .petsInZooLike{
+        width: 303px;
+    }
+    main .petsInZoo .allmenuMein .allmenuMeinRow .petsInZooLike{
+        width: 303px;
+        height: 40px;
+    }
+    main .petsInZoo .allmenuMein .allmenuMeinTable{
+        width: 100%;
+    }
+    main .petsInZoo .allmenuMein .allmenuMeinTable div{
+        width: 32.5%;
+        height: 273.41px;
+    }
+    main .petsInZoo .allmenuSecondary{
+        margin-left: 29.31px;
+        margin-right: 39px;
+    }
+    main .petsInZoo .allmenuSecondary .i1{
+        margin-top: 243px;
+    }
+    main .petsInZoo .allmenuSecondary .i3{
+        margin-top: 170px;
+    }
+    main .petsInZoo{
+        margin-left: 0px;
+    }
+    main .payAndFeed{
+        background-image: url("OnlineZ.image/Vector 23.png");
+        z-index: 2;
+    }
+    main .payAndFeedBack{
+        display: flex;
+        position: absolute;
+        top: 1760px;
+    }
+    main .payAndFeed .strelki .payAndColown .payAndImg img{
+        background-color: white;
+    }
+    main .testimon{
+        width: 94.75%;
+        margin-left: 32px;
+    }
+    main .lookAtThisAnimals{
+        width: 92.2216667%;
+        margin-left: 28px;
+    }
+    main .lookAtThisAnimals .atherAnimals .atherAnimalsFaceLast{
+        margin-right: 0px;
+    }
+    footer img{
+        margin-left: 32px;
+    }
+    footer .footerContactsRow{
+        margin-right: 31px;
+    }
 }
-footer .Contacts{
-    margin: 1%;
-    width: 98%;
-    background-color: white;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width: 950px){
+    main .petsInZoo{
+        height: 1070px;
+    }
+    main .petsInZoo .allmenuMeinTable .im3{
+        margin-right: 10px;
+    }
+    main .petsInZoo .allmenuMeinTable .im6{
+        margin-right: 10px;
+    }
+    footer a{
+        display: none;
+    }
+    main .payAndFeedBack{
+        top: 1990px;
+    }
 }
-
-footer .Contacts .Cont{
-    margin-left: 30px;
-    margin-top: 20px;
-    font-size: 40px;
+@media screen and (max-width: 800px){
+    main .payAndFeedBack{
+        top: 2465px;
+    }
+    header .controlPanel{
+        display: none;
+    }
+    header .onlineLogoSearch div img{
+        display: none;
+    }
+    header .onlineLogoSearch .personImg{
+        display: none;
+    }
+    header .onlineLogoSearch .personMenu{
+        display: flex;
+    }
+    header .olinezLogo{
+        margin-left: 20px;
+    }
+    main .textFavoriteAnimal{
+        margin-left: 20px;
+    }
+    main .textFavoriteAnimal .tFA1{
+        margin-top: 29px;
+    }
+    main .textFavoriteAnimal .tFA3{
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -0.05em;
+        padding: 10px 50px 9px 50px;
+        text-transform: uppercase;
+        margin-top: 31px;
+    }
+    main .textFavoriteAnimal .tFA31{
+        width: 58px;
+        margin-top: 31px;
+        display: flex;
+    }
+    main .textFavoriteAnimal .tFA4{
+        margin-top: 99px;
+    }
+    main .WatchFavoriteAnimal{
+        background-image: url(OnlineZ.image/Vector241.png);
+        background-size: 100% 490px;
+    }
+    main .WatchFavoritShadow{
+        display: flex;
+        position: relative;
+        background-image: url(OnlineZ.image/Vector\ 25.png);
+        background-size: 100% 490px;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+    main .videoFavoriteAnimal{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 39.84375%;
+        height: 211px;
+        margin-top: 33px;
+        margin-left: 21px;
+        height: auto;
+    }
+    main .videoFavoriteAnimal .pandaimg{
+        width: 68.47px;
+        height: 51.35;
+        margin-top: 60px;
+    }
+    main .petsInZoo .allmenuMeinTable .im3{
+        display: none;
+    }
+    main .petsInZoo .allmenuMeinTable .im6{
+        display: none;
+    }
+    main .petsInZoo .allmenuMeinTable{
+        width: 90.859375%;
+        flex-wrap: wrap;
+    }
+    main .petsInZoo .allmenuMein .allmenuMeinRow{
+        width: 100%;
+    }
+    main .petsInZoo .allmenuMeinTableRow .allmenuMeinTable div{
+        width: 48%;
+    }
+    main .petsInZoo .allmenuSecondary{
+        margin-left: 3.46875%;
+    }
+    main .payAndFeed .strelki1, .strelki2{
+        display: none;
+    }
+    main .payAndFeed .strelka1, .strelka2{
+        display: flex;
+        margin-bottom: 25px;
+    }
+    main .petsInZoo{
+        height: 800px;
+    }
+    main .payAndFeedBack{
+        top: 2200px;
+    }
+    main .fieldPanda .panda1{
+        right: 600px;
+    }
+    main .fieldPanda .bamboo1{
+        right: 650px;
+    }
+    main .testimon .testimoRow2{
+        flex-direction: column;
+        align-items: center;
+    }
+    main .testimon{
+        height: 1000px;
+    }
+    main .testimon .testimoMasage{
+        margin-bottom: 24px;
+    }
+    main .testimon .testimoMasage .BG{
+        width: 300px;
+    }
+    main .lookAtThisAnimals .atherAnimals{
+        flex-wrap: wrap;
+    }
+    main .lookAtThisAnimals .atherAnimals .atherAnimalsFace{
+        margin-right: 29px;
+    }
+    main .lookAtThisAnimals .atherAnimals .atherAnimalsFaceLast{
+        display: none;
+    }
+    main .lookAtThisAnimals .atherAnimals .atherAnimalsArrows{
+        display: none;
+    }
+    main .lookAtThisAnimals .atherAnimalsArrows2Row{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+    main .lookAtThisAnimals .atherAnimalsArrows2{
+        width: 15px;
+        height: 21px;
+        margin-bottom: 29.5px;
+    }
+    main .lookAtThisAnimals .atherAnimals{
+        margin-bottom: 46.5px;
+    }
 }
-
-footer .Contacts ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 90%;
-    height: 100px;
-    margin-left: 30px;
+@media screen and (max-width: 673px){
+    main .petsInZoo .allmenuMeinTable .im2, .im4, .im5, .im6{
+        display: none;
+    }
+    main .petsInZoo .allmenuMeinTable .im3{
+        display: flex;
+    }
+    main .payAndFeed .payAndFeedDonate{
+        display: none;
+    }
 }
-footer .Contacts ul li{
-    text-decoration: none;
+@media screen and (max-width: 600px){
+    main .testimon .testimoRow1LeaveFeed2{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 41px;
+    }
+    main .testimon .testimoRow2{
+        align-items: flex-start;
+    }
+    main .WatchFavoriteAnimal{
+        flex-direction: column-reverse;
+        background-image: url(OnlineZ.image/Vector242.png);
+        background-size: 100% 724px;
+    }
+    main .videoFavoriteAnimal{
+        width: 79.6875%;
+        height: 211px;
+        background-size: 255px 100%;
+        background-position: center;
+    }
+    main .threeImage{
+        flex-direction: column;
+        height: 623px;
+    }
+    main .fieldPanda .panda1{
+        right: 740px;
+    }
+    main .petsInZoo .allmenuMeinTableRow .allmenuMeinTable div{
+        width: 100%;
+    }
+    main .petsInZoo .allmenuMein .allmenuMeinRow .petsInZooLikeDiv{
+        display: none;
+    }
+    main .petsInZoo .allmenuMeinTableRow .allmenuMeinTable div .im3{
+        width: 100%;
+    }
+    main .petsInZoo .allmenuMeinTableRow .allmenuMeinTable div .im3 img{
+        background-color: red;
+        width: 47.6916667%;
+        height: 60.7142857%;
+    }
+    main .payAndFeed .strelki{
+        flex-direction: column;
+        margin-top: 400px;
+    }
+    main .payAndFeed .strelka1, .strelka2{
+        display: none;
+    }
+    main .payAndFeed .strelky1, .strelky2{
+        margin-top: 27.5px;
+        margin-bottom: 36.5px;
+        display: flex;
+    }
+    main .payAndFeed .payAndFeedRow{
+        margin-top: 49.71px;
+    }
+    main .payAndFeed{
+        background-image: url(OnlineZ.image/Vector28.png);
+        background-size: 100% 960px;
+        height: 960px;
+    }
+    main .petsInZoo .allmenuMeinTable .im3, .im1{
+        display: flex;
+        margin-top: 5.49450549%;
+        justify-content: center;
+        width: 66.6666666%;
+        height: 60.7142857%;
+    }
+    main .petsInZoo .allmenuMeinTable .im3 img{
+        width: 64%;
+    }
+    main .petsInZoo .allmenuMeinTable .im1 img{
+        width: 64%;
+    }
+    main .payAndFeed .strelki .dtv{
+        display: flex;
+        font-family: Roboto Mono;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -0.05em;
+        text-transform: uppercase;
+        color: #0D444D;
+        padding: 11px 22.5% 11px 22.8125%;
+        background: #C5E1E6;
+        border-radius: 100px;
+        margin-top: 49px;
+    }
+    main .testimon .testimoRow1 .testimoRow1LeaveFeed{
+        display: none;
+    }
+    main .petsInZoo .allmenuMeinTable .cyf{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+    main .petsInZoo .allmenuMeinTable .cyf img{
+        width: 269px;
+        height: 37px;
+    }
+    main .petsInZoo{
+        height: 900px;
+    }
+    footer .footerContacts{
+        font-size: 10px;
+        line-height: 12px;
+    }
+}
+@media screen and (max-width: 480px){
+    main .textFavoriteAnimal{
+        margin-left: 11px;
+    }
+    main .textFavoriteAnimal .tFA1{
+        font-size: 32px;
+        line-height: 38px;
+    }
+    main .textFavoriteAnimal div{
+        width: 90.625%;
+        white-space: wrap;
+    }
+    main .WatchFavoriteAnimal{
+        background-size: 100% 600px;
+    }
+    main .textFavoriteAnimal br{
+        display: none;
+    }
+    main .textFavoriteAnimal .br1{
+        display: flex;
+    }
+    main .textFavoriteAnimal .tFA31{
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -0.05em;
+    }
+    main .textFavoriteAnimal .tFA3{
+        padding: 10px 34px 10px 35px;
+        margin-right: 21px;
+    }
+    main .textFavoriteAnimal .tFA31{
+        padding: 12px 40px 10px 41px;
+    }
 }
