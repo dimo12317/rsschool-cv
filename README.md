@@ -1,4 +1,4 @@
 # rsschool-cv
 https://dimo12317.github.io/rsschool-cv/cv
 
-https:///dimo12317.github.io/dimo12317/rsschool-cv/index.html
+https:///dimo12317.github.io/rsschool-cv/index.html
